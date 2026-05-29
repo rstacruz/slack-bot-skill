@@ -553,3 +553,23 @@ Output params:
 - `ok`: boolean success flag.
 - `error`: Slack error code when `ok` is false.
 
+### Other useful methods
+
+Docs: <https://docs.slack.dev/reference/methods>
+
+Use the Slack methods index when a task needs an endpoint not listed above. Check the method docs for required scopes and bot-token support before calling it.
+
+Potentially useful, depending on task and scopes:
+
+- `reactions.get`: inspect reactions on a message; requires `reactions:read`.
+- `users.lookupByEmail`: resolve user by email; requires `users:read.email` and may not support custom bot users.
+- `users.profile.get`: read a user's profile fields.
+- `conversations.create`: create public/private channels; admin/destructive, ask first.
+- `conversations.invite`: invite users to a channel; ask first.
+- `conversations.rename`: rename a channel; destructive, ask first.
+- `conversations.setTopic`: set channel topic; ask first.
+- `conversations.setPurpose`: set channel purpose; ask first.
+- `conversations.archive` / `conversations.unarchive`: archive state changes; destructive, ask first.
+- `usergroups.create` / `usergroups.update` / `usergroups.disable` / `usergroups.enable`: manage user groups; admin/destructive, ask first.
+- `usergroups.users.update`: replace user group membership; destructive, ask first.
+- Pagination patterns with `cursor` / `next_cursor`.
