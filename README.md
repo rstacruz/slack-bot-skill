@@ -1,12 +1,12 @@
 # Slack bot skill
 
-Allow Slack access to your favourite agents, no MCP's involved. Uses cURL to Slack's REST API. Works with Claude Code, Codex, Pi, OpenCode, or anything else that supports skills.
+Allow Slack access to your favourite agents, no MCP's needed. Uses cURL to Slack's REST API. Works with Claude Code, Codex, Pi, OpenCode, or anything else that supports skills.
 
 ## Installation
 
-- `npx skills add rstacruz/<repo to follow later>`
-- Create a Slack app (see [setup instructions](./setup.md))
-- Install Slack app to your workspace
+1. Install the skill: `npx skills add rstacruz/slack-bot-skill`
+2. Create a Slack app, see [**setup instructions**](./setup.md)
+3. Install the Slack app in your workspace
 
 Then test it out:
 
