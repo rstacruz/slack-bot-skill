@@ -11,7 +11,7 @@ Before calling Slack, verify the token is available without printing it:
 
 ```bash
 if [ -z "${SLACK_BOT_XOXB_TOKEN:-}" ]; then
-  echo "SLACK_BOT_XOXB_TOKEN is not set" >&2
+  echo "SLACK_BOT_XOXB_TOKEN is not set. See setup instructions: https://github.com/rstacruz/slack-bot-skill/blob/main/setup.md" >&2
   exit 1
 fi
 ```
